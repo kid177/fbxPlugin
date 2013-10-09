@@ -1,30 +1,4 @@
 import sys, struct
-
-'''
-    yuwu@ 
-    Terrain format
-    
-	struct TerrainBlockHeader
-	{
-		uint32		version_;
-		uint32		heightMapWidth_;
-		uint32		heightMapHeight_;
-		float		spacing_;
-		uint32		nTextures_;
-		uint32		textureNameSize_;
-		uint32		detailWidth_;
-		uint32		detailHeight_;
-		uchar		uvRepeatTimes_[4];
-		uchar		boxProjChannel_[4];
-		uint32		padding_[64 - 8 - sizeof(uchar)*8/sizeof(uint32)];
-	};
-    
-    0000: header(256B)
-    0100: pics(128B*4)
-    0300: height(4B*53*53)
-    2ee4: unknown(?)
-'''
-
 def rotate(fname): # 90 degree
     #print 'rotating', fname
     f = open(fname, 'rb')

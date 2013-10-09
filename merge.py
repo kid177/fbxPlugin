@@ -191,7 +191,7 @@ def main(pChunkInfo, pTempFile, pFlag):
             f.write('now fbx write successful!~\n')
     if DEBUG:
         f.write('all fbx write successful and begin to save scene\n')
-    f.close()
+        f.close()
     FbxCommon.SaveScene(lSdkManager, lMyRefScene, 'scene.fbx')
     
    # print dir(FbxSystemUnit)
