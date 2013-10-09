@@ -1,0 +1,8 @@
+###dir
+build
+dist
+
+###file
+buglist.docx
+*.pyc
+tags
